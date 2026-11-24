@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.offerings {
+  h2 {
+    font-size: $caption-mobile;
+    line-height: 1.15;
+    font-weight: 400;
+    color: $accent-light;
+    margin-bottom: 20px;
+
+    @include tablet  { font-size: $link-tablet; }
+    @include desktop { font-size: $link-desktop; }
+  }
+}
+
+.offering-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.offering-item {
+  flex: 1;
+  max-width: 100%;
+
+  a {
+    display: block;
+    background-color: $card-green;
+    color: $card-muted;
+    border-radius: 4px;
+    font-size: $caption-mobile;
+    text-align: center;
+    padding: 20px 10px;
+    min-height: 100%;
+  }
+
+  span {
+    display: block;
+    font-weight: 500;
+    max-width: min-content;
+    margin: 15px auto 0;
+
+    @include tablet  { font-size: $link-tablet; }
+    @include desktop { font-size: $link-desktop; }
+  }
+}

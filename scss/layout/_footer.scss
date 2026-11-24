@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer {
+  background-color: $bg-light;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include tablet-up {
+    padding: 30px 40px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @include desktop {
+    grid-column: 2;
+  }
+}
+
+.logo-container {
+  @include flex(column, space-between);
+}
+
+.footer-logo-img {
+  filter: brightness(0) saturate(100%);
+}
+
+.footer-logo-text {
+  color: $text-black;
+  font-size: $h1-desktop;
+  font-weight: 700;
+}
+
+.contact-section {
+  h3 {
+    font-size: $link-mobile;
+    color: $text-gray;
+    margin-bottom: 12px;
+  }
+
+  li {
+    font-size: $link-mobile;
+    color: $text-black;
+  }
+
+  @include tablet {
+    h3, li, .terms li { font-size: $link-tablet; }
+  }
+
+  @include desktop {
+    h3, li, .terms li { font-size: $link-desktop; }
+  }
+}
+
+.terms {
+  margin-top: 120px;
+
+  li {
+    color: $text-gray;
+  }
+}

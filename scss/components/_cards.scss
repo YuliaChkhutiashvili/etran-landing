@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cards-container {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+
+  @include tablet-up {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.card {
+  @include flex(column, flex-end, center, 30px);
+  text-align: center;
+  background-color: $accent-light;
+  width: 100%;
+  border-radius: 10px;
+  padding: 30px 0;
+
+  span {
+    color: $heading;
+  }
+}

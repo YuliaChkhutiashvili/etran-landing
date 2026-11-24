@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-height: max-content;
+
+  img {
+    width: 0.937rem;
+    height: 1.0625rem;
+  }
+
+  span {
+    color: $bg-white;
+    font-size: $text-default;
+    font-family: $font-logo;
+    font-weight: 500;
+    line-height: 1.058;
+    letter-spacing: 0.02em;
+    margin-left: 20px;
+  }
+}

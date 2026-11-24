@@ -1,0 +1,41 @@
+// ===== Colors =====
+$bg-dark:      #394508;
+$bg-white:     #ffffff;
+$bg-light:     #ededed;
+$accent-light: #d2fd9c;
+$accent-mid:   #77912a;
+$accent-dark:  #619111;
+$card-green:   #4d6b0d; // offering cards background
+$card-muted:   #85a152; // offering cards text and icons
+$heading:      #394508;
+$text-black:   #000000;
+$text-gray:    #5d5d5d;
+$subhead:      #a3a3a3;
+$overlay:      #d9d9d9;
+
+// ===== Fonts =====
+$font-main: "Manrope", sans-serif;
+$font-logo: "IBM Plex Sans", sans-serif;
+
+// ===== Font sizes =====
+$h1-mobile:  1.75rem;
+$h1-tablet:  2.25rem;
+$h1-desktop: 2.625rem;
+
+$h2-mobile:  1.375rem;
+$h2-tablet:  1.75rem;
+$h2-desktop: 2rem;
+
+$h3:         1.25rem;
+$text-default: 1rem;
+
+$caption-mobile:  0.6875rem;
+$caption-desktop: 0.625rem;
+
+$link-mobile:  0.6875rem;
+$link-tablet:  0.71875rem;
+$link-desktop: 0.75rem;
+
+// ===== Breakpoints =====
+$bp-tablet:  800px;
+$bp-desktop: 1280px;

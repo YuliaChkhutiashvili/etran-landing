@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.cta {
+  @include flex(row, center, center);
+  background-color: $accent-light;
+  width: 5.3125rem;
+  height: 2.125rem;
+  border-radius: 2px;
+  color: $text-black;
+  font-size: $caption-mobile;
+
+  @include desktop {
+    font-size: $caption-desktop;
+  }
+}

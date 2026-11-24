@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-main;
+  font-size: $text-default;
+  width: 100%;
+  min-height: 100vh;
+  overflow-wrap: break-word;
+
+  // Desktop: header on the left (1/3), content on the right (2/3)
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}

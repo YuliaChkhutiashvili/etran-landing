@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+nav {
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    font-size: $link-mobile;
+    color: $accent-light;
+
+    @include tablet  { font-size: $link-tablet; }
+    @include desktop { font-size: $link-desktop; }
+  }
+}

@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+  width: 100%;
+  background-color: $bg-dark;
+  padding: 20px 20px 30px 20px;
+
+  @include tablet {
+    padding: 20px 40px;
+  }
+
+  @include desktop {
+    grid-row: span 2;
+    padding: 30px 40px;
+  }
+}
+
+.sticky {
+  @include flex(column, flex-start, stretch, 40px);
+
+  @include tablet {
+    gap: 50px;
+  }
+
+  @include desktop {
+    position: sticky;
+    top: 30px;
+    max-width: fit-content;
+  }
+}
+
+.logo-cta {
+  @include flex(row, space-between, stretch, 20px);
+  flex-wrap: wrap;
+}
+
+.main-heading {
+  font-size: $h1-mobile;
+  max-width: 15ch;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: $bg-white;
+
+  span {
+    color: $accent-light;
+  }
+
+  @include tablet  { font-size: $h1-tablet; }
+  @include desktop { font-size: $h1-desktop; }
+}
+
+.heading-text p {
+  color: $subhead;
+  line-height: 1.09;
+}
